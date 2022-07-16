@@ -185,12 +185,12 @@ echo '</p>';
 <input type="text" size=20 id="email" name="email" placeholder="あなたのメールアドレス">
 <input type="text" size=20 id="kind" name="kind" placeholder="種別"><br>
 <textarea name="contents" rows="5" cols="20" id="contents" placeholder="内容" ></textarea>
-<textarea name="answer" rows="5" cols="20" id="answer" placeholder="回答" ></textarea><br>
-<textarea name="phplog" rows="1" cols="20" id="phplog" placeholder="実行ログ" ></textarea><br>
+<textarea style="display:none" name="answer" rows="5" cols="20" id="answer" placeholder="回答" ></textarea><br>
+<textarea  style="display:none" name="phplog" rows="1" cols="20" id="phplog" placeholder="実行ログ" ></textarea><br>
 <input type="text" size=20 id="srch_word" name="srch_word" placeholder="検索ワード">
 <input type="text" size=5 id="srchid_value" name="srchid_value" placeholder="検索id">
-<input type="text" size=5 id="delid_value" name="delid_value" placeholder="削除id">
-<input type="text" size=5 id="updateid_value" name="updateid_value" placeholder="回答id">
+<input  type="hidden" type="text" size=5 id="delid_value" name="delid_value" placeholder="削除id">
+<input  type="hidden" type="text" size=5 id="updateid_value" name="updateid_value" placeholder="回答id">
 
 <p class="more"><input id="send" type="submit" value="DB書き込み"onclick="clickwrite()"/>
 <select name="action" id="action">
