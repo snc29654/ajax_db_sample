@@ -83,7 +83,7 @@ file_put_contents("../id_mail.txt", "\n");
     echo "<form action=\"\" method=\"post\" enctype=\"multipart/form-data\">";
     echo "<p><input type=\"hidden\" size=5 id=\"contentsid\" name=\"contentsid\" value=\"$id\">";
     echo "<p><input type=\"hidden\" size=5 id=\"email\" name=\"email\" value=\"$email\">";
-    echo "<textarea id=\"contents\" name=\"contents\" rows=\"1\" cols=\"20\" style=\"background-color:#bde9ba\" id=\"contents\" placeholder=\"内容\" >$contents</textarea>";
+    echo "<textarea id=\"contents\" name=\"contents\" rows=\"5\" cols=\"20\" style=\"background-color:#bde9ba\" id=\"contents\" placeholder=\"内容\" >$contents</textarea>";
     echo "<input type=\"submit\" value=\"内容更新\" /></p>";
     echo "</form>";
 
@@ -109,7 +109,7 @@ file_put_contents("../id_mail.txt", "\n");
     echo "<form action=\"\" method=\"post\" enctype=\"multipart/form-data\">";
     echo "<p><input type=\"hidden\" size=5 id=\"answerid\" name=\"answerid\" value=\"$id\">";
     echo "<p><input type=\"hidden\" size=5 id=\"email\" name=\"email\" value=\"$email\">";
-    echo "<textarea id= \"answer\" name=\"answer\" rows=\"1\" cols=\"20\" style=\"background-color:#bde9ba\" id=\"answer\" placeholder=\"回答\" >$answer</textarea>";
+    echo "<textarea id= \"answer\" name=\"answer\" rows=\"5\" cols=\"20\" style=\"background-color:#bde9ba\" id=\"answer\" placeholder=\"回答\" >$answer</textarea>";
     echo "<input type=\"submit\" value=\"回答\" /></p>";
     echo "</form>";
 
